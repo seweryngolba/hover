@@ -1,0 +1,58 @@
+.container {
+  width: 960px;
+  margin: 200px auto;
+  background-color: blanchedalmond;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  rotate: 270deg;
+  position: absolute;
+  bottom: 50px;
+}
+
+.offer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.one {
+  width: 250px;
+  height: 300px;
+  border-radius: 10px;
+  background: lightgray;
+  transition: all linear 0.3s;
+}
+
+.two {
+  width: 100px;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  background: lightgray;
+  transition: all linear 0.3s;
+}
+
+.hvr {
+  visibility: hidden;
+  transition: all linear 0.2s;
+}
+
+.one:hover {
+  width: 100px;
+}
+
+.two:hover {
+  width: 250px;
+  background: purple;
+}
+
+.two:hover h1 {
+  visibility: hidden;
+}
+
+.two:hover .hvr {
+  visibility: visible;
+}
