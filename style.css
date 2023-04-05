@@ -22,6 +22,7 @@ h1 {
   width: 250px;
   height: 300px;
   border-radius: 10px;
+  position: relative;
   background: lightgray;
   transition: all linear 0.3s;
 }
