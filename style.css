@@ -23,7 +23,7 @@ h1 {
   height: 300px;
   border-radius: 10px;
   position: relative;
-  background: lightgray;
+  background: cadetblue;
   transition: all linear 0.3s;
 }
 
@@ -37,17 +37,37 @@ h1 {
 }
 
 .hvr {
+  text-align: center;
+  margin: 10px auto;
+  max-width: 150px;
   visibility: hidden;
   transition: all linear 0.2s;
 }
 
+.one .hvr {
+  visibility: visible;
+}
+
+.one h1 {
+  visibility: hidden;
+}
+
 .one:hover {
   width: 100px;
+  background: lightgray;
+}
+
+.one:hover h1 {
+  visibility: visible;
+}
+
+.one:hover .hvr {
+  visibility: hidden;
 }
 
 .two:hover {
   width: 250px;
-  background: purple;
+  background: lightcoral;
 }
 
 .two:hover h1 {
